@@ -1,8 +1,8 @@
-workspace "MyWorkspace"
+workspace "GamePadTesterWorkspace"
    configurations { "Debug", "Release" }
    architecture "x86_64"
 
-project "MyProject"
+project "GamePadTester"
    kind "ConsoleApp"
    language "C"
 
