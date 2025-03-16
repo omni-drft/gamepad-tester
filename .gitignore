@@ -16,6 +16,8 @@ compile_commands.json
 *.user
 *.sln.docstates
 
+*.vcxproj
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
