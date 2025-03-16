@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="readmeBanner.png" width="650" title="logo">
-</p>
+
 
 # Linux Gamepad Tester
 
