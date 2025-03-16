@@ -32,7 +32,7 @@ void checkInput()
 
         /* Left analog */
         DrawCircle(GetScreenWidth() / 2 - 200, GetScreenHeight() / 2, 36, GRAY);
-        DrawCircle(GetScreenWidth() / 2 - 200, GetScreenHeight() / 2, 34, WHITE);
+        DrawCircle(GetScreenWidth() / 2 - 200, GetScreenHeight() / 2, 34, BLACK);
     
         DrawCircle(
             GetScreenWidth() / 2 - 200 + (GetGamepadAxisMovement(GAME_CONTROLLER, GAMEPAD_AXIS_LEFT_X) * 30), 
@@ -61,7 +61,7 @@ void checkInput()
 
         /* Right analog */
         DrawCircle(GetScreenWidth() / 2, GetScreenHeight() / 2 + 140, 36, GRAY);
-        DrawCircle(GetScreenWidth() / 2, GetScreenHeight() / 2 + 140, 34, WHITE);
+        DrawCircle(GetScreenWidth() / 2, GetScreenHeight() / 2 + 140, 34, BLACK);
     
         DrawCircle(
             GetScreenWidth() / 2 + (GetGamepadAxisMovement(GAME_CONTROLLER, GAMEPAD_AXIS_RIGHT_X) * 30), 
@@ -128,26 +128,26 @@ void checkInput()
         DrawText("Values", 580, 220, 20, BLACK);
 
         /* Left Trigger */
-        DrawText(TextFormat("L Trigger:    %2.2f", (GetGamepadAxisMovement(GAME_CONTROLLER,GAMEPAD_AXIS_LEFT_TRIGGER) + 1) * 50), 510, 250, 20, BLACK);
+        DrawText(TextFormat("L Trigger:    %2.2f", (GetGamepadAxisMovement(GAME_CONTROLLER,GAMEPAD_AXIS_LEFT_TRIGGER) + 1) * 50), 510, 250, 20, GRAY);
         /* Left analog */
         DrawText(
                 TextFormat("L Analog:      %2.2f,  %2.2f", 
                     GetGamepadAxisMovement(GAME_CONTROLLER, GAMEPAD_AXIS_LEFT_X), 
                     GetGamepadAxisMovement(GAME_CONTROLLER, GAMEPAD_AXIS_LEFT_Y)), 
-                510, 270, 20, BLACK);
+                510, 270, 20, GRAY);
         
         /* Left Trigger */
-        DrawText(TextFormat("R Trigger:    %2.2f", (GetGamepadAxisMovement(GAME_CONTROLLER,GAMEPAD_AXIS_RIGHT_TRIGGER) + 1) * 50), 510, 290, 20, BLACK);
+        DrawText(TextFormat("R Trigger:    %2.2f", (GetGamepadAxisMovement(GAME_CONTROLLER,GAMEPAD_AXIS_RIGHT_TRIGGER) + 1) * 50), 510, 290, 20, GRAY);
         /* Left analog */
         DrawText(
                 TextFormat("R Analog:      %2.2f,  %2.2f", 
                     GetGamepadAxisMovement(GAME_CONTROLLER, GAMEPAD_AXIS_RIGHT_X), 
                     GetGamepadAxisMovement(GAME_CONTROLLER, GAMEPAD_AXIS_RIGHT_Y)), 
-                510, 310, 20, BLACK);
+                510, 310, 20, GRAY);
 
     }
     else 
     {
-        DrawText("Gamepad not detected", GetScreenWidth() / 2 - 160, GetScreenHeight() / 2 - 14, 28, BLACK);
+        DrawText("Gamepad not detected", GetScreenWidth() / 2 - 160, GetScreenHeight() / 2 - 14, 28, GRAY);
     }
 }

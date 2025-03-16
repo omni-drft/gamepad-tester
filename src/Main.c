@@ -6,15 +6,15 @@
 
 int main()
 {
-    InitWindow(WIDTH, HEIGHT, "Linux Gamepad Tester");
-    SetTargetFPS(144);
+    InitWindow(WIDTH, HEIGHT, "GamePad Tester");
+    SetTargetFPS(60);
     SetConfigFlags(FLAG_MSAA_4X_HINT);
     while(!WindowShouldClose())
     {
         BeginDrawing();
-        ClearBackground(RAYWHITE);
-        DrawText("Linux GamePad Tester", 5, 5, 20, BLACK);
-        DrawText("By Piotr Walczak", GetScreenWidth() - 190, GetScreenHeight() - 25, 20, BLACK);
+        ClearBackground(BLACK);
+        DrawText("GamePad Tester", 5, 5, 20, GRAY);
+        DrawText("By Piotr Walczak", GetScreenWidth() - 190, GetScreenHeight() - 25, 20, GRAY);
         checkInput();
         EndDrawing();
     }
