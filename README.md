@@ -17,14 +17,12 @@ This project was made to find and analise possible issues with a game controller
 
 ## How to build
 
-* Install raylib or build it by yourself.
-* In the project directory use `cmake .`
-* Run generated Makefile (`./Makefile`).
-* Run the program (`./LinuxGamepadTester`).
+* Generate solution files with included [premake](https://premake.github.io/) script.
+* Compile project using generated solution files.
+* Run compiled project. It should be in `bin/config/` folder.
 
 ## Common Issues
 
-* This project was meant to be used on linux, but it is possible to run it on windows. You only need to tweak a little bit CMakeLists.txt file.
 * If you run the program and it tells you that no gamepad is connected there is a possibility that your gamepad is not supported (at least in GLFW3) or i didn't add the support for that gamepad (less possible).
 
 ## Contributing
