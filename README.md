@@ -1,6 +1,6 @@
 
 
-# Linux Gamepad Tester
+# Gamepad Tester
 
 <p align="center">
   <img src="screenshot.png" width="650" title="logo">
